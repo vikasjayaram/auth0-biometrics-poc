@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.auth0.samples"
+        targetSdkVersion 30
+        minSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [auth0Domain: "@string/com_auth0_domain", auth0Scheme: "demo"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.auth0.android:auth0:2.5.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "androidx.biometric:biometric:1.1.0"
+    testImplementation 'junit:junit:4.13.1'
+}
