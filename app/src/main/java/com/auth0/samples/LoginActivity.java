@@ -64,6 +64,16 @@ public class LoginActivity extends AppCompatActivity {
                 requestBiometricPrompt();
             }
         });
+
+        Button rtFragmentButton = findViewById(R.id.rtFragmentButton);
+        rtFragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, DemoActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         // Biometrics init
         executor = ContextCompat.getMainExecutor(this);
 

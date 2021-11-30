@@ -28,6 +28,7 @@
         android:layout_gravity="center"
         android:background="@android:color/white"
         android:padding="@dimen/activity_general_margin"
+        android:layout_marginTop="@dimen/activity_general_margin"
         android:text="@string/rtAuth0Bio"
         android:textColor="@color/blue_text" />
     <Button
@@ -36,8 +37,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@android:color/white"
+        android:layout_marginTop="@dimen/activity_general_margin"
         android:padding="@dimen/activity_general_margin"
         android:text="@string/rtSystemBio"
         android:textColor="@color/blue_text" />
-
+    <Button
+        android:id="@+id/rtFragmentButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:padding="@dimen/activity_general_margin"
+        android:layout_marginTop="@dimen/activity_general_margin"
+        android:text="@string/rtFragmentBio"
+        android:textColor="@color/blue_text" />
 </LinearLayout>

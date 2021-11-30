@@ -7,6 +7,7 @@
     <string name="login">Log in</string>
     <string name="rtAuth0Bio">Refresh with Auth0 Bio</string>
     <string name="rtSystemBio">Refresh with Bio Prompt</string>
+    <string name="rtFragmentBio">Refresh with Fragment</string>
 
     <string name="logout">Log out</string>
 </resources>
